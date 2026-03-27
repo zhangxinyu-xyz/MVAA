@@ -66,7 +66,7 @@ To balance quality and efficiency, MVAA adopts a **two-stage adaptation strategy
 - **Rapid test-time fine-tuning** for video-specific adaptation (can be done within several minutes on a single modern GPU).
 
 <div align="center">
-  <br><br>
+  <br>
   <img src="assets/main_method.gif" alt="MVAA main method demo" width="95%">
   <br>
   <a href="assets/main_method.mp4"><b>Open video with sound</b></a>
