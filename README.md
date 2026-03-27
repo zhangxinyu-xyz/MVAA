@@ -67,7 +67,7 @@ To balance quality and efficiency, MVAA adopts a **two-stage adaptation strategy
 
 <div align="center">
   <br><br>
-  <video src="assets/main_method.mp4" controls width="95%">
+  <video src="assets/main_method.gif" controls width="95%">
     Your browser does not support the video tag.
   </video>
   <br>
