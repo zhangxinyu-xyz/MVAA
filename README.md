@@ -92,7 +92,8 @@ MVAA/
 ├── preprocess/      # music/video preprocessing and alignment tools
 ├── postprocess/     # music/video postprocessing
 ├── utils/  
-├── assets/          
+├── assets/    
+├── data/        
 └── README.md
 ```
 
@@ -108,8 +109,11 @@ pip install -r requirements.txt
 
 You need:
 
-- data/videos.txt  # all video list, the path is the related path
-- data/musics.txt  # all music list, the path is the related path
+- ```data/videos/```  # all raw videos
+- ```data/musics/```  # all raw musics
+- ```data/videos.txt```  # all video list, the path is the related path
+- ```data/musics.txt```  # all music list, the path is the related path
+- ```data/prompts.txt```  # all videos' prompts, the path is the related path
 
 Recommended preprocessing:
 
@@ -119,6 +123,8 @@ Recommended preprocessing:
 
 The repository provides helper scripts under `preprocess/` for these steps.
 
+💜 The evaluation video can be downloaded from the [Evaluation Dataset](https://drive.google.com/file/d/1shSQWrkC3AqG_IE2wEaVjUEeRwF7hxok/view?usp=sharing). 
+
 ### Checkpoints
 
 Please download and prepare:
@@ -126,7 +132,9 @@ Please download and prepare:
 - The required base video diffusion backbone (e.g., CogVideoX I2V variant used in your experiments).
 - MVAA-related checkpoints produced by your training or released weights.
 
-Place checkpoints in your preferred local directory and update the paths in scripts accordingly.
+Place checkpoints in your preferred local directory and update the paths in scripts accordingly. The default folder is ```models/```
+
+🩵 The checkpoint trained on 1,000 randomly selected videos from [OpenViD](https://github.com/NJU-PCALab/OpenVid-1M) can be downloaded from the [MVAA Models](https://drive.google.com/file/d/1uCtHGVXJSB-bFDvNw_qoISdtch-uHIKY/view?usp=sharing). 
 
 ---
 
@@ -164,8 +172,8 @@ bash finetune/train_mvaa_multiple_videos_testtime.sh  ## multiple videos test-ti
 Run MVAA inference and generate beat-aligned videos:
 
 ```bash
-bash inference/run_MVAA_eval.sh  ## single video inference
-bash inference/run_MVAA_eval_multivideo.sh  ## single video inference and evaluation
+bash inference/run_MVAA_demo.sh  ## single video demo
+bash inference/run_MVAA_eval.sh  ## multiple videos inference and evaluation
 ```
 ---
 
