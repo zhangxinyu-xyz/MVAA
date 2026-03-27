@@ -67,7 +67,11 @@ To balance quality and efficiency, MVAA adopts a **two-stage adaptation strategy
 
 <div align="center">
   <br><br>
-  <img src="assets/main_method.gif" alt="MVAA main method demo" width="95%">
+  <video src="assets/main_method.mp4" controls width="95%">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <a href="assets/main_method.mp4"><b>Open video with sound</b></a>
 </div>
 
 ---
